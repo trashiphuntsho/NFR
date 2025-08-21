@@ -98,7 +98,7 @@ The supplier shall implement robust project management and quality assurance pro
 **Aspects:** Project Management Methodology, Quality Management System, Documentation, Maintainability Planning, Modularity and Reusability, Traceability, Change Management, Training and Support, DevSecOps.
 
 *   **Project Management Methodology:** A formal project management methodology (e.g., Agile Scrum, SAFe, Waterfall) shall be adopted and documented, ensuring clear roles, responsibilities, and communication channels. Regular progress reports shall be provided.
-*   **Quality Management System:** A certified Quality Management System (e.g., ISO 9001) shall be in place, covering all aspects of software development, testing, and deployment.
+*   **Quality Management System:** A good Quality Management System shall be in place, covering all aspects of software development, testing, and deployment.
 *   **Documentation:** Comprehensive and up-to-date documentation shall be provided, including but not limited to: system design documents, API documentation, user manuals, administrator guides, and training materials. All documentation shall be clear, concise, and accurate, and updated with every system release.
 *   **Maintainability Planning:** A detailed maintainability plan shall be provided, outlining strategies for long-term system support, including code refactoring, technical debt management, and knowledge transfer.
 *   **Modularity and Reusability:** The system shall be designed with high modularity and reusability, promoting the use of standardized components and interfaces to facilitate future development and reduce redundancy.
