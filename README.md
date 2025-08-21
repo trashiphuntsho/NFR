@@ -1,6 +1,6 @@
 #### *** FREE TO USE ***
-Still Working on this document
-Inspiration and reference coming soon.
+*Still Working on this document.
+*Inspiration and reference coming soon.
 
 # Non-Functional Requirements Document
 
