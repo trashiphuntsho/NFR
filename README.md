@@ -59,10 +59,11 @@ The system shall be highly maintainable, facilitating efficient defect resolutio
 *   **System Recovery:** The Mean Time To Recover (MTTR) from a complete system failure shall not exceed 4 hours.
 *   **Code Complexity:** The codebase shall maintain a cyclomatic complexity score of less than 10 for no less than 90% of its modules.
 *   **Code Coverage:** Unit test code coverage shall be no less than 85%.
+*   **Code Complete:** No TODO/FIXME in release branches; dead code removed; all public APIs documented; error handling standardized.
 *   **Coding Standards:** The codebase shall rigorously adhere to established coding standards and conventions (e.g., PEP 8 for Python, Google Java Style Guide).
 *   **Documentation:** Comprehensive inline comments and documentation shall be provided for complex logic.
 *   **Naming Conventions:** A clear and consistent naming convention shall be applied for variables, functions, and classes.
-*   **Code Reviews:** No less than 90% of all code changes shall undergo peer review.
+*   **Code Reviews:** < 90% of all code changes shall undergo peer review.
 *   **Static Analysis:** Static code analysis tools (e.g., SonarQube, ESLint) shall be integrated into the development workflow, with all critical and major code smells and bugs remediated prior to merging to main branches.
 
 #### NFR-PROD-005: System Architecture and Portability
@@ -202,63 +203,5 @@ The system shall be designed to be compatible with future versions of operating 
 *   **AES-256:** Advanced Encryption Standard with a 256-bit key
 *   **Agile Scrum:** An iterative and incremental agile software development framework
 *   **API:** Application Programming Interface
-*   **AWS:** Amazon Web Services
-*   **CCPA:** California Consumer Privacy Act
-*   **CERT:** Computer Emergency Response Team
-*   **CI/CD:** Continuous Integration/Continuous Delivery
-*   **DAST:** Dynamic Application Security Testing
-*   **DevSecOps:** Development, Security, and Operations
-*   **Docker:** A platform for developing, shipping, and running applications in containers
-*   **ELK Stack:** Elasticsearch, Logstash, Kibana (a suite of tools for log management and analysis)
-*   **ESLint:** A static code analysis tool for identifying problematic patterns found in JavaScript code
-*   **GDPR:** General Data Protection Regulation
-*   **GPL:** GNU General Public License
-*   **HIPAA:** Health Insurance Portability and Accountability Act
-*   **HTTP/2:** Hypertext Transfer Protocol version 2
-*   **IaC:** Infrastructure as Code
-*   **ISO:** International Organization for Standardization
-*   **Istio:** An open-source service mesh that layers transparently on existing distributed applications
-*   **JSON:** JavaScript Object Notation
-*   **JUnit:** A unit testing framework for the Java programming language
-*   **KPI:** Key Performance Indicator
-*   **Kubernetes:** An open-source container orchestration system
-*   **Linkerd:** A service mesh for Kubernetes
-*   **Linux:** A family of open-source Unix-like operating systems
-*   **macOS:** A series of graphical operating systems developed by Apple
-*   **MIT License:** A permissive free software license
-*   **MTBF:** Mean Time Between Failures
-*   **MTTR:** Mean Time To Repair / Mean Time To Recover
-*   **NDI:** National Digital Identity
-*   **NFR:** Non-Functional Requirement
-*   **NIS:** National Identification System
-*   **NPG:** National Payment Gateway
-*   **OAuth 2.0:** An authorization framework that enables applications to obtain limited access to user accounts on an HTTP service
-*   **OpenAPI 3.0:** A standard, language-agnostic interface description for REST APIs
-*   **OWASP:** Open Web Application Security Project
-*   **PCI DSS:** Payment Card Industry Data Security Standard
-*   **PEP 8:** Python Enhancement Proposal 8 (Python style guide)
-*   **Prometheus:** An open-source monitoring system
-*   **RBAC:** Role-Based Access Control
-*   **RHEL:** Red Hat Enterprise Linux
-*   **RoHS:** Restriction of Hazardous Substances Directive
-*   **RPO:** Recovery Point Objective
-*   **RTO:** Recovery Time Objective
-*   **SAFe:** Scaled Agile Framework
-*   **SAST:** Static Application Security Testing
-*   **SBOM:** Software Bill of Materials
-*   **SIEM:** Security Information and Event Management
-*   **SLA:** Service Level Agreement
-*   **SLO:** Service Level Objective
-*   **SonarQube:** An open-source platform for continuous inspection of code quality
-*   **SOC 2:** Service Organization Control 2 (a type of audit report)
-*   **SQL:** Structured Query Language
-*   **SUS:** System Usability Scale
-*   **TLS 1.3:** Transport Layer Security version 1.3
-*   **TPS:** Transactions Per Second
-*   **UAT:** User Acceptance Testing
-*   **UI:** User Interface
-*   **WEEE:** Waste Electrical and Electronic Equipment Directive
-*   **WCAG:** Web Content Accessibility Guidelines
-*   **Windows:** A series of graphical operating systems developed by Microsoft
 
 
