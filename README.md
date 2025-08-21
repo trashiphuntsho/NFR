@@ -75,9 +75,12 @@ The system shall be designed with a modern, modular, and portable architecture, 
 *   **Service Mesh:** A service mesh (e.g., Istio, Linkerd) shall be implemented to manage inter-service communication, providing capabilities such as traffic management, observability, and security.
 *   **Deployment Flexibility:** The system shall be deployable on Linux, and a container orchestration platform (e.g., Kubernetes) without requiring any code changes or recompilation. The deployment process shall be fully automated and documented, achieving a deployment success rate of 100% across all specified environments.
 *   **Cloud Migration:** The system shall support migration to different cloud providers (e.g., from AWS to Azure) with minimal effort, demonstrated by a documented migration plan and successful execution in a test environment.
-*   **Database Architecture:** The database architecture shall be robust, scalable, and performant, supporting high transaction volumes and efficient data retrieval. It shall be designed for horizontal scalability and ensure data consistency (e.g., ACID properties for transactional databases, eventual consistency for NoSQL where appropriate). The database shall support a minimum of 5,000 transactions per second (TPS) with an average latency of less than 50ms under normal load, and scale linearly with increased resources.
 
-#### NFR-PROD-006: Interoperability
+#### NFR-PROD-006 Database Performance and Architecture
+The data layer shall support the target throughput and consistency model with explicit indexing, partitioning/sharding strategy, caching, and connection pooling. Read/write patterns must be profiled and optimized.
+It shall be designed for horizontal scalability and ensure data consistency (e.g., ACID properties for transactional databases, eventual consistency for NoSQL where appropriate). The database shall support a minimum of 5,000 transactions per second (TPS) with an average latency of less than 50ms under normal load, and scale linearly with increased resources.
+
+#### NFR-PROD-007: Interoperability
 
 The system shall seamlessly and securely integrate with designated external systems, facilitating efficient data exchange and process automation. Bidders should describe their approach to API design, standards supported, and strategies for handling errors and failures.
 
