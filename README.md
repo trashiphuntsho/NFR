@@ -77,7 +77,7 @@ The system shall be designed with a modern, modular, and portable architecture, 
 
 The system shall seamlessly and securely integrate with designated external systems, facilitating efficient data exchange and process automation. Bidders should describe their approach to API design, standards supported, and strategies for handling errors and failures.
 
-**Aspects:** External System Integration, Communication Patterns, Integration Test Pass Rate, Gov DataHub, NDI.
+**Aspects:** External System Integration, Communication Patterns, Integration Test Pass Rate, DataHub, NDI.
 
 *   **External System Integration:** The system shall integrate with the national identification system (NIS) and the national payment gateway (NPG) using OAuth 2.0 for authentication, and RESTful APIs conforming to OpenAPI 3.0 specifications, utilizing JSON payloads over HTTP/2.
 *   **Communication Patterns:** All integration points shall support asynchronous communication patterns (e.g., webhooks, message queues) to ensure resilience and scalability.
