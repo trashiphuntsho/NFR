@@ -1,3 +1,7 @@
+### *** FREE TO USE ***
+### Still Working on this document
+### Inspiration and reference coming soon.
+
 # Non-Functional Requirements Document
 
 ## 1. Objective
