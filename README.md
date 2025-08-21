@@ -147,6 +147,7 @@ The system shall comply with all applicable laws, regulations, and industry stan
 *   **Data Privacy:** The system shall comply with the General Data Protection Regulation (GDPR) and other relevant data privacy laws (e.g., CCPA), ensuring data minimization, purpose limitation, and data subject rights.
 *   **Industry Standards:** The system shall adhere to relevant industry standards (e.g., PCI DSS for payment processing, HIPAA for healthcare data) as applicable.
 *   **Accessibility Standards:** The system shall comply with Web Content Accessibility Guidelines (WCAG) 2.1 Level AA, ensuring accessibility for users with disabilities.
+*   **Data Sovereignty:** Ensuring [Company] data is stored in approved national data centres, is a mandatory requirement. All production data and backups shall reside in accredited in-country facilities.
 
 #### NFR-EXT-02: Legal and Contractual Requirements
 
