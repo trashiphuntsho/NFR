@@ -1,4 +1,4 @@
-#### *** FREE TO USE ***
+#### *** FREE TO USE AND OPEN FOR CONTRIBUTION ***
 *Still Working on this document.
 *Inspiration and reference coming soon.
 
