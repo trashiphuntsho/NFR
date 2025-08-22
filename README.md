@@ -20,12 +20,12 @@ The system shall exhibit exceptional resilience and performance, ensuring contin
 
 **Aspects:** Reliability, Availability, Performance, Scalability, Caching.
 
-*   **Reliability:** The system shall achieve a Mean Time Between Failures (MTBF) of no less than 1,500 hours, calculated quarterly, excluding pre-notified scheduled maintenance windows (maximum 4 hours/month, 1-week advance notice).
-*   **Availability:** The system shall maintain an operational availability of 99.9% during defined operational hours ([e.g., 06:00 to 22:00], [e.g., Monday to Friday]), measured by continuous 24/7 monitoring of key endpoints.
-*   **Performance under Normal Load:** The system shall support 10,000 concurrent users with an average response time of less than 1.5 seconds for 95% of critical transactions (e.g., user login, data retrieval, transaction submission) and less than 3 seconds for all other transactions.
-*   **Performance under Peak Load:** Under peak load conditions (defined as 15,000 concurrent users), the system shall maintain an average response time of less than 3 seconds for 95% of critical transactions and less than 5 seconds for all other transactions.
-*   **Scalability:** The system shall demonstrate linear scalability, whereby a doubling of hardware resources yields at least a 60% increase in transaction throughput.
-*   **Caching:** An effective caching strategy (client-side, application-level, database query) shall be implemented to optimize performance and reduce database load, achieving a cache hit ratio of no less than 90% for frequently accessed data, with robust and configurable invalidation policies to ensure data freshness.
+*   **Reliability:** The system shall achieve a Mean Time Between Failures (MTBF) of no less than [1,500 hours], calculated [quarterly], excluding pre-notified scheduled maintenance windows (maximum 4 hours/month, 1-week advance notice).
+*   **Availability:** The system shall maintain an operational availability of [99.9]% during defined operational hours ([e.g., 06:00 to 22:00], [e.g., Monday to Friday]), measured by continuous 24/7 monitoring of key endpoints.
+*   **Performance under Normal Load:** The system shall support [10,000] concurrent users with an average response time of less than [1.5] seconds for [95]% of critical transactions (e.g., user login, data retrieval, transaction submission) and less than 3 seconds for all other transactions.
+*   **Performance under Peak Load:** Under peak load conditions (defined as [15,000] concurrent users), the system shall maintain an average response time of less than [3] seconds for [95]% of critical transactions and less than [5] seconds for all other transactions.
+*   **Scalability:** The system shall demonstrate linear scalability, whereby a doubling of hardware resources yields at least a [60]% increase in transaction throughput.
+*   **Caching:** An effective caching strategy (client-side, application-level, database query) shall be implemented to optimize performance and reduce database load, achieving a cache hit ratio of no less than [90]% for frequently accessed data, with robust and configurable invalidation policies to ensure data freshness.
 
 #### NFR-PROD-002: Comprehensive System Security
 
@@ -33,7 +33,7 @@ The system shall implement a robust, multi-layered security architecture that sa
 
 **Aspects:** Data Protection, Access Control, Logging and Auditability, Vulnerability Management, Secure Coding.
 
-*   **Data Protection:** All data in transit shall be secured using TLS 1.3. All sensitive data at rest shall be encrypted using AES-256 or a stronger encryption standard.
+*   **Data Protection:** All data in transit shall be secured using [TLS 1.3]. All sensitive data at rest shall be encrypted using [AES-256] or a stronger encryption standard.
 *   **Access Control:** Support both RBAC and ABAC; maintain an auditable access control matrix mapping roles/attributes to permissions; enforce least privilege and MFA for privileged operations. A comprehensive access control matrix detailing roles, attributes, and corresponding permissions shall be maintained and auditable.
 *   **Logging and Auditability:** All user actions and critical system events shall be comprehensively logged, with logs stored securely and immutably for a minimum of 12 months to facilitate forensic analysis and compliance.
 *   **Vulnerability Management:** The system shall undergo annual penetration testing and vulnerability assessments by a party selected by the Procuring Authority. All critical and high-severity vulnerabilities identified shall be remediated within 3 and 7 calendar days, respectively.
@@ -47,7 +47,7 @@ The system shall provide an intuitive, efficient, and accessible user experience
 
 *   **Transaction Success Rate:** The system shall achieve a first-attempt transaction success rate of no less than 98% for critical user workflows (e.g., user registration, data entry, report generation), as measured during User Acceptance Testing (UAT).
 *   **Usability Heuristics:** The User Interface (UI) shall rigorously adhere to established usability heuristics (e.g., Nielsen's 10 Usability Heuristics).
-*   **System Usability Scale (SUS):** The system shall achieve an average System Usability Scale (SUS) score of 75 or higher from a representative user group.
+*   **System Usability Scale (SUS):** The system shall achieve an average System Usability Scale (SUS) score of [75] or higher from a representative user group.
 
 #### NFR-PROD-004: Maintainability and Code Quality
 
@@ -55,15 +55,15 @@ The system shall be highly maintainable, facilitating efficient defect resolutio
 
 **Aspects:** Defect Resolution, System Recovery, Code Complexity, Code Coverage, Coding Standards/Conventions, Documentation, Code Reviews, Static Analysis.
 
-*   **Defect Resolution:** High-priority defects (Severity 1 and Severity 2, as classified by the procuring authority) shall be resolved within 2 business hours and 8 business hours, respectively. The Mean Time To Repair (MTTR) for Severity 1 defects shall not exceed 2 hours, and for Severity 2 defects, it shall not exceed 8 hours.
+*   **Defect Resolution:** High-priority defects (Severity 1 and Severity 2, as classified by the procuring authority) shall be resolved within 2 business hours and 8 business hours, respectively. The Mean Time To Repair (MTTR) for Severity 1 defects shall not exceed [2] hours, and for Severity 2 defects, it shall not exceed [8] hours.
 *   **System Recovery:** The Mean Time To Recover (MTTR) from a complete system failure shall not exceed 4 hours.
-*   **Code Complexity:** The codebase shall maintain a cyclomatic complexity score of less than 10 for no less than 90% of its modules.
-*   **Code Coverage:** Unit test code coverage shall be no less than 85%.
-*   **Code Complete:** The codebase shall be 100% complete, fully functional, and free from placeholder code, incomplete features, or commented-out sections intended for future development. All modules, functions, and classes shall be fully implemented and integrated as per the design specifications. The system shall compile and run without errors or warnings in the specified development and production environments.
+*   **Code Complexity:** The codebase shall maintain a cyclomatic complexity score of less than [10] for no less than [90]% of its modules.
+*   **Code Coverage:** Unit test code coverage shall be no less than [85]%.
+*   **Code Complete:** The codebase shall be [100]% complete, fully functional, and free from placeholder code, incomplete features, or commented-out sections intended for future development. All modules, functions, and classes shall be fully implemented and integrated as per the design specifications. The system shall compile and run without errors or warnings in the specified development and production environments.
 *   **Coding Standards:** The codebase shall rigorously adhere to established coding standards and conventions (e.g., PEP 8 for Python, Google Java Style Guide).
 *   **Documentation:** Comprehensive inline comments and documentation shall be provided for complex logic.
 *   **Naming Conventions:** A clear and consistent naming convention shall be applied for variables, functions, and classes.
-*   **Code Reviews:** ≥ 80% of all code changes shall undergo peer review.
+*   **Code Reviews:** ≥ [80]% of all code changes shall undergo peer review.
 *   **Static Analysis:** Static code analysis tools (e.g., SonarQube, ESLint) shall be integrated into the development workflow, with all critical and major code smells and bugs remediated prior to merging to main branches.
 
 #### NFR-PROD-005: System Architecture and Portability
@@ -84,7 +84,7 @@ The system shall seamlessly and securely integrate with designated external syst
 
 **Aspects:** External System Integration, Communication Patterns, Integration Test Pass Rate, DataHub, NDI.
 
-*   **External System Integration:** The system shall integrate with the national identification system (NIS) and the national payment gateway (NPG) using OAuth 2.0 for authentication, and RESTful APIs conforming to OpenAPI 3.0 specifications, utilizing JSON payloads over HTTP/2.
+*   **External System Integration:** The system shall integrate with the national identification system (NIS) and the national payment gateway (NPG) using [OAuth 2.0] for authentication, and RESTful APIs conforming to [OpenAPI 3.0] specifications, utilizing [JSON] payloads over [HTTP/2].
 *   **Communication Patterns:** All integration points shall support asynchronous communication patterns (e.g., webhooks, message queues) to ensure resilience and scalability.
 *   **Integration Test Pass Rate:** A 100% pass rate shall be achieved for all integration test cases, including performance under load, error handling, and security vulnerability testing.
 
@@ -113,7 +113,7 @@ The supplier shall implement robust project management and quality assurance pro
 The system shall be designed for high survivability, ensuring continuous operation, rapid recovery from major incidents, and robust protection against data loss, corruption, and unauthorized modification.
 Disaster Recovery (DR): A geographically dispersed active-passive or active-active DR architecture with automated failover capabilities shall be implemented.
 
-*   **Recovery Time Objective (RTO):** RTO of no more than 30 minutes for critical services and 2 hours for all other services.
+*   **Recovery Time Objective (RTO):** RTO of no more than [30] minutes for critical services and [2] hours for all other services.
 *   **Recovery Point Objective (RPO):** RPO of no more than 5 minutes for critical data.
 *   **DR Drills:** Regular, unannounced disaster recovery drills shall be conducted at least semi-annually, with detailed post-drill reports and lessons learned.
 *   **Incident Response:** Comprehensive incident response and business continuity plans shall be regularly reviewed and tested.
@@ -179,7 +179,7 @@ The system shall be designed and operated with a strong emphasis on environmenta
 **Aspects:** Energy Efficiency, Environmental Regulations.
 
 *   **Environmental Regulations:** The system's operation and disposal shall comply with all applicable environmental regulations (e.g., RoHS, WEEE).
-*   **Green Data Centers:** Utilization of data centers with a Power Usage Effectiveness (PUE) rating of 1.2 or lower, ideally powered by 100% renewable energy sources.
+*   **Green Data Centers:** Utilization of data centers with a Power Usage Effectiveness (PUE) rating of [1.2 or lower], ideally powered by [100]% renewable energy sources.
 *   **Energy-Efficient Coding:** Implementation of energy-efficient coding practices and algorithms to minimize computational overhead.
 *   **Resource Optimization:** Optimization of resource utilization through dynamic scaling and serverless architectures where appropriate.
 *   **Carbon Footprint Reporting:** Provision of regular reports on the system's carbon footprint and energy consumption.
