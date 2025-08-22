@@ -29,7 +29,7 @@ The system shall exhibit exceptional resilience and performance, ensuring contin
 
 #### NFR-PROD-002: Comprehensive System Security
 
-The system shall implement a robust, multi-layered security architecture that safeguards data integrity, confidentiality, and availability, and protects against unauthorized access, use, disclosure, disruption, modification, or destruction. Bidders should describe their layered security model, including approaches to encryption, access management, vulnerability handling, and secure coding practices. Alignment with recognized industry standards (e.g., ISO, OWASP) is encouraged but specific technologies are at the vendor’s discretion.
+The system shall implement a robust, multi-layered security architecture that safeguards data integrity, confidentiality, and availability. The proposed system shall actively protect against unauthorized access, illicit use, unwarranted disclosure, operational disruption, unauthorized modification, or malicious destruction of data and system resources. Bidders should describe their layered security model, including approaches to encryption, access management, vulnerability handling, and secure coding practices. Alignment with recognized industry standards (e.g., ISO, OWASP) is encouraged but specific technologies are at the vendor’s discretion.
 
 **Aspects:** Data Protection, Access Control, Logging and Auditability, Vulnerability Management, Secure Coding.
 
