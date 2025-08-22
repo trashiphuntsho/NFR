@@ -63,7 +63,7 @@ The system shall be highly maintainable, facilitating efficient defect resolutio
 *   **Coding Standards:** The codebase shall rigorously adhere to established coding standards and conventions (e.g., PEP 8 for Python, Google Java Style Guide).
 *   **Documentation:** Comprehensive inline comments and documentation shall be provided for complex logic.
 *   **Naming Conventions:** A clear and consistent naming convention shall be applied for variables, functions, and classes.
-*   **Code Reviews:** < 90% of all code changes shall undergo peer review.
+*   **Code Reviews:** ≥ 80% of all code changes shall undergo peer review.
 *   **Static Analysis:** Static code analysis tools (e.g., SonarQube, ESLint) shall be integrated into the development workflow, with all critical and major code smells and bugs remediated prior to merging to main branches.
 
 #### NFR-PROD-005: System Architecture and Portability
