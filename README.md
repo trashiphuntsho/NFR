@@ -210,7 +210,7 @@ The system shall be designed to be compatible with future versions of operating 
 
 **Aspects:** Device Compatibility, Operating System Compatibility, Browser Compatibility, Technology Stack Evolution.
 
-*   **Operating System Compatibility:** The system shall be compatible with the latest stable versions of major operating systems (e.g., Windows, macOS, Linux distributions) for at least five years from the date of deployment.
+*   **System Compatibility:** The system shall be compatible with the latest stable versions of major device, and operating systems (e.g., Windows, macOS, Linux distributions) for at least five years from the date of deployment.
 *   **Browser Compatibility:** The web-based components of the system shall be compatible with the latest two major versions of leading web browsers (e.g., Chrome, Firefox, Edge, Safari).
 *   **Technology Stack Evolution:** The chosen technology stack shall have a clear roadmap for future evolution and be actively supported by its community or vendor.
 
