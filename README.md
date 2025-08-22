@@ -187,16 +187,14 @@ The system shall be designed and operated with a strong emphasis on environmenta
 
 #### NFR-EXT-04: Third-Party Dependencies
 
-The supplier shall identify and manage all third-party dependencies, including software libraries, APIs, and external services, ensuring their reliability, security, and compatibility. Bidders should describe their approach to third-party risk management.
+The supplier shall identify and manage all third-party dependencies, including software libraries, APIs, and external services, ensuring their reliability, security, and compatibility. Bidders should describe their approach to third-party risk management. All third-party software components shall be regularly updated to their latest stable and secure versions. A software bill of materials (SBOM) shall be provided and maintained.
 
 **Aspects:** Third-Party Software, External APIs, Cloud Services.
-
-*   **Third-Party Software:** All third-party software components shall be regularly updated to their latest stable and secure versions. A software bill of materials (SBOM) shall be provided and maintained.
-  *   **Component Name and Version:** Precise identification of each third-party component.
-  *   **License Type:** The specific license under which each component is distributed (e.g., MIT, Apache 2.0, GPL, commercial).
-  *   **Purpose and Justification:** A brief explanation of why each component is necessary and its role in the system.
-  *   **Security Vulnerability Status:** Confirmation that each component is free from known critical or high-severity security vulnerabilities, based on a recent scan using industry-standard tools (e.g., OWASP Dependency-Check, Snyk).
-  *   **Support and Maintenance Status:** Information on the availability of ongoing support, maintenance, and security updates for each component.
+*   **Component Name and Version:** Precise identification of each third-party component.
+*   **License Type:** The specific license under which each component is distributed (e.g., MIT, Apache 2.0, GPL, commercial).
+*   **Purpose and Justification:** A brief explanation of why each component is necessary and its role in the system.
+*   **Security Vulnerability Status:** Confirmation that each component is free from known critical or high-severity security vulnerabilities, based on a recent scan using industry-standard tools (e.g., OWASP Dependency-Check, Snyk).
+*   **Support and Maintenance Status:** Information on the availability of ongoing support, maintenance, and security updates for each component.
 *   **External APIs:** Reliance on external APIs shall be minimized where possible. For necessary external APIs, robust error handling, retry mechanisms, and fallback strategies shall be implemented.
 *   **Cloud Services:** If cloud services are utilized, they shall adhere to industry best practices for security, reliability, and data privacy. Cloud service provider certifications (e.g., ISO 27001, SOC 2) shall be provided.
 
@@ -216,12 +214,43 @@ The system shall be designed to be compatible with future versions of operating 
 *   **Browser Compatibility:** The web-based components of the system shall be compatible with the latest two major versions of leading web browsers (e.g., Chrome, Firefox, Edge, Safari).
 *   **Technology Stack Evolution:** The chosen technology stack shall have a clear roadmap for future evolution and be actively supported by its community or vendor.
 
-## 3. Glossary
+## 3. Definitions and Acronyms
 
-*   **ABAC:** Attribute-Based Access Control
-*   **ACID:** Atomicity, Consistency, Isolation, Durability
-*   **AES-256:** Advanced Encryption Standard with a 256-bit key
-*   **Agile Scrum:** An iterative and incremental agile software development framework
-*   **API:** Application Programming Interface
+For purposes of this document, the following definitions and acronyms shall apply:
+
+- **ABAC:** Attribute-Based Access Control – A security mechanism that controls access to resources based on attributes of the user, resource, and environment.
+- **AES-256:** Advanced Encryption Standard with 256-bit keys – A symmetric encryption algorithm used for securing data at rest.
+- **CI/CD:** Continuous Integration/Continuous Delivery – A set of practices that enable rapid and reliable delivery of software.
+- **CVE:** Common Vulnerabilities and Exposures – A list of publicly disclosed cybersecurity vulnerabilities.
+- **DAST:** Dynamic Application Security Testing – A security testing method that analyzes a running application for vulnerabilities.
+- **DevSecOps:** Development, Security, and Operations – The integration of security practices into the DevOps process.
+- **IaC:** Infrastructure as Code – Managing and provisioning computer infrastructure using code instead of manual processes.
+- **ISO/IEC 25010:2011:** International Organization for Standardization/International Electrotechnical Commission 25010:2011 – A standard for systems and software engineering that defines quality models.
+- **JSON:** JavaScript Object Notation – A lightweight data-interchange format.
+- **MTBF:** Mean Time Between Failures – The predicted elapsed time between inherent failures of a system during operation.
+- **MTTR:** Mean Time To Repair – The average time required to repair a failed component or system.
+- **NFR:** Non-Functional Requirement – A requirement that specifies criteria that can be used to judge the operation of a system, rather than specific behaviors.
+- **OAuth 2.0:** Open Authorization 2.0 – An industry-standard protocol for authorization.
+- **OIDC:** OpenID Connect – An authentication layer on top of OAuth 2.0.
+- **OLTP:** Online Transaction Processing – A class of software systems that facilitate and manage transaction-oriented applications.
+- **OpenAPI 3.0:** A standard, language-agnostic interface description for REST APIs.
+- **OWASP:** Open Web Application Security Project – A non-profit foundation that works to improve the security of software.
+- **PUE:** Power Usage Effectiveness – A metric used to determine the energy efficiency of a data center.
+- **RBAC:** Role-Based Access Control – A security mechanism that restricts system access based on predefined user roles.
+- **RPO:** Recovery Point Objective – The maximum tolerable period in which data might be lost from an IT service due to a major incident.
+- **RTO:** Recovery Time Objective – The maximum tolerable duration of time that a computer, system, network, or application can be inoperative after a disaster.
+- **SAST:** Static Application Security Testing – A security testing method that analyzes source code for vulnerabilities without executing the application.
+- **SCA:** Software Composition Analysis – A tool that identifies open-source components in a codebase and their associated licenses and vulnerabilities.
+- **SDLC:** Software Development Life Cycle – A framework outlining the stages involved in developing an information system.
+- **SLA:** Service Level Agreement – A contract between a service provider and a customer that specifies the level of service expected.
+- **SLSA:** Supply-chain Levels for Software Artifacts – A framework for ensuring the integrity of software artifacts.
+- **SBOM:** Software Bill of Materials – A formal, machine-readable list of ingredients that make up software components.
+- **SUS:** System Usability Scale – A simple, ten-item questionnaire for subjective assessment of usability.
+- **TLS 1.3:** Transport Layer Security 1.3 – The latest version of the cryptographic protocol designed to provide communications security over a computer network.
+- **ToR:** Terms of Reference – A document that defines the purpose and structure of a project, committee, meeting, or similar activity.
+- **UAT:** User Acceptance Testing – The final phase of software testing where end-users verify the software meets their requirements.
+- **UI:** User Interface – The means by which the user and a computer system interact.
+- **UX:** User Experience – The overall experience of a person using a product, system or service.
+- **WCAG 2.1 AA:** Web Content Accessibility Guidelines 2.1 Level AA – A set of guidelines for making web content more accessible to people with disabilities.
 
 
