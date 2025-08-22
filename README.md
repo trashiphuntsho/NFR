@@ -120,8 +120,6 @@ Disaster Recovery (DR): A geographically dispersed active-passive or active-acti
 *   **Data Safety Mechanisms:** Robust data safety mechanisms shall be implemented, including comprehensive client-side and server-side input validation (100% validation pass rate), transactional integrity (ACID properties), regular data backups (RPO ≤ 15 minutes), data encryption at rest and in transit, robust error handling and logging, and mechanisms for data reconciliation and recovery. Data anonymization or pseudonymization shall be used for non-production environments where sensitive data is present.
 
 
-
-
 #### NFR-ORG-03: Warranty, Support & Maintenance
 
 **Warranty**
@@ -174,14 +172,18 @@ The system shall comply with all legal and contractual obligations, including li
 *   **Intellectual Property:** The procuring authority shall retain full intellectual property rights over all custom-developed software and configurations. The supplier shall indemnify the procuring authority against any claims of intellectual property infringement.
 *   **Contractual Obligations:** The system shall meet all contractual obligations outlined in the master service agreement and any associated statements of work.
 
-#### NFR-EXT-03: Environmental Requirements
+#### NFR-EXT-03: Environmental Sustainability
 
-The system shall operate efficiently within specified environmental conditions and adhere to relevant environmental regulations. Bidders should describe their approach to energy efficiency and environmental sustainability.
+The system shall be designed and operated with a strong emphasis on environmental sustainability and energy efficiency. The system shall operate efficiently within specified environmental conditions and adhere to relevant environmental regulations. Bidders should describe their approach to energy efficiency and environmental sustainability.
 
 **Aspects:** Energy Efficiency, Environmental Regulations.
 
-*   **Energy Efficiency:** The system shall be designed for optimal energy efficiency, minimizing power consumption and heat dissipation. Energy consumption metrics shall be monitored and reported.
 *   **Environmental Regulations:** The system's operation and disposal shall comply with all applicable environmental regulations (e.g., RoHS, WEEE).
+*   **Green Data Centers:** Utilization of data centers with a Power Usage Effectiveness (PUE) rating of 1.2 or lower, ideally powered by 100% renewable energy sources.
+*   **Energy-Efficient Coding:** Implementation of energy-efficient coding practices and algorithms to minimize computational overhead.
+*   **Resource Optimization:** Optimization of resource utilization through dynamic scaling and serverless architectures where appropriate.
+*   **Carbon Footprint Reporting:** Provision of regular reports on the system's carbon footprint and energy consumption.
+
 
 #### NFR-EXT-04: Third-Party Dependencies
 
@@ -190,8 +192,15 @@ The supplier shall identify and manage all third-party dependencies, including s
 **Aspects:** Third-Party Software, External APIs, Cloud Services.
 
 *   **Third-Party Software:** All third-party software components shall be regularly updated to their latest stable and secure versions. A software bill of materials (SBOM) shall be provided and maintained.
+*   ***Component Name and Version:*** Precise identification of each third-party component.
+*   ***License Type:*** The specific license under which each component is distributed (e.g., MIT, Apache 2.0, GPL, commercial).
+*   ***Purpose and Justification:*** A brief explanation of why each component is necessary and its role in the system.
+*   ***Security Vulnerability Status:*** Confirmation that each component is free from known critical or high-severity security vulnerabilities, based on a recent scan using industry-standard tools (e.g., OWASP Dependency-Check, Snyk).
+*   ***Support and Maintenance Status:*** Information on the availability of ongoing support, maintenance, and security updates for each component.
 *   **External APIs:** Reliance on external APIs shall be minimized where possible. For necessary external APIs, robust error handling, retry mechanisms, and fallback strategies shall be implemented.
 *   **Cloud Services:** If cloud services are utilized, they shall adhere to industry best practices for security, reliability, and data privacy. Cloud service provider certifications (e.g., ISO 27001, SOC 2) shall be provided.
+
+The procuring authority reserves the right to approve or reject the use of any third-party component based on licensing terms, security posture, support availability, or strategic considerations. The supplier shall be responsible for obtaining all necessary licenses and ensuring compliance with their terms.
 
 #### NFR-EXT-05: Service Level Agreements (SLAs)
 
@@ -201,7 +210,7 @@ Detailed Service Level Agreements (SLAs) will be agreed upon, specifying key per
 
 The system shall be designed to be compatible with future versions of operating systems, browsers, and other relevant technologies, ensuring long-term usability and reducing the need for costly re-development. Bidders should describe their strategy for future compatibility.
 
-**Aspects:** Operating System Compatibility, Browser Compatibility, Technology Stack Evolution.
+**Aspects:** Device Compatibility, Operating System Compatibility, Browser Compatibility, Technology Stack Evolution.
 
 *   **Operating System Compatibility:** The system shall be compatible with the latest stable versions of major operating systems (e.g., Windows, macOS, Linux distributions) for at least five years from the date of deployment.
 *   **Browser Compatibility:** The web-based components of the system shall be compatible with the latest two major versions of leading web browsers (e.g., Chrome, Firefox, Edge, Safari).
