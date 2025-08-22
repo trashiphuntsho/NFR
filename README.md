@@ -59,7 +59,7 @@ The system shall be highly maintainable, facilitating efficient defect resolutio
 *   **System Recovery:** The Mean Time To Recover (MTTR) from a complete system failure shall not exceed 4 hours.
 *   **Code Complexity:** The codebase shall maintain a cyclomatic complexity score of less than 10 for no less than 90% of its modules.
 *   **Code Coverage:** Unit test code coverage shall be no less than 85%.
-*   **Code Complete:** No TODO/FIXME in release branches; dead code removed; all public APIs documented; error handling standardized.
+*   **Code Complete:** The codebase shall be 100% complete, fully functional, and free from placeholder code, incomplete features, or commented-out sections intended for future development. All modules, functions, and classes shall be fully implemented and integrated as per the design specifications. The system shall compile and run without errors or warnings in the specified development and production environments.
 *   **Coding Standards:** The codebase shall rigorously adhere to established coding standards and conventions (e.g., PEP 8 for Python, Google Java Style Guide).
 *   **Documentation:** Comprehensive inline comments and documentation shall be provided for complex logic.
 *   **Naming Conventions:** A clear and consistent naming convention shall be applied for variables, functions, and classes.
@@ -76,10 +76,7 @@ The system shall be designed with a modern, modular, and portable architecture, 
 *   **Service Mesh:** A service mesh (e.g., Istio, Linkerd) shall be implemented to manage inter-service communication, providing capabilities such as traffic management, observability, and security.
 *   **Deployment Flexibility:** The system shall be deployable on Linux, and a container orchestration platform (e.g., Kubernetes) without requiring any code changes or recompilation. The deployment process shall be fully automated and documented, achieving a deployment success rate of 100% across all specified environments.
 *   **Cloud Migration:** The system shall support migration to different cloud providers (e.g., from AWS to Azure) with minimal effort, demonstrated by a documented migration plan and successful execution in a test environment.
-
-#### NFR-PROD-006 Database Performance and Architecture
-The data layer shall support the target throughput and consistency model with explicit indexing, partitioning/sharding strategy, caching, and connection pooling. Read/write patterns must be profiled and optimized.
-It shall be designed for horizontal scalability and ensure data consistency (e.g., ACID properties for transactional databases, eventual consistency for NoSQL where appropriate). The database shall support a minimum of 5,000 transactions per second (TPS) with an average latency of less than 50ms under normal load, and scale linearly with increased resources.
+*   **Database Performance** The data layer shall support the target throughput and consistency model with explicit indexing, partitioning/sharding strategy, caching, and connection pooling. Read/write patterns must be profiled and optimized. It shall be designed for horizontal scalability and ensure data consistency (e.g., ACID properties for transactional databases, eventual consistency for NoSQL where appropriate). The database shall support a minimum of 5,000 transactions per second (TPS) with an average latency of less than 50ms under normal load, and scale linearly with increased resources.
 
 #### NFR-PROD-007: Interoperability
 
@@ -111,7 +108,21 @@ The supplier shall implement robust project management and quality assurance pro
 *   **Training and Support:** Comprehensive training programs shall be provided for end-users and administrators, covering system functionality, operation, and troubleshooting. Ongoing technical support shall be provided with defined Service Level Agreements (SLAs) for response and resolution times.
 *   **DevSecOps:** A comprehensive DevSecOps approach shall be implemented throughout the entire software development lifecycle, integrating security practices into every phase from design and development to testing, deployment, and operations. This includes automated security testing (SAST, DAST, SCA) integrated into the CI/CD pipeline, infrastructure as code (IaC) with security best practices embedded, continuous monitoring of security posture in production environments, regular security training for all development and operations personnel, and a clear process for managing and responding to security incidents.
 
-#### NFR-ORG-02: Warranty, Support & Maintenance
+
+#### NFR-IRG-002: System Survivability and Data Safety
+The system shall be designed for high survivability, ensuring continuous operation, rapid recovery from major incidents, and robust protection against data loss, corruption, and unauthorized modification.
+Disaster Recovery (DR): A geographically dispersed active-passive or active-active DR architecture with automated failover capabilities shall be implemented.
+
+*   **Recovery Time Objective (RTO):** RTO of no more than 30 minutes for critical services and 2 hours for all other services.
+*   **Recovery Point Objective (RPO):** RPO of no more than 5 minutes for critical data.
+*   **DR Drills:** Regular, unannounced disaster recovery drills shall be conducted at least semi-annually, with detailed post-drill reports and lessons learned.
+*   **Incident Response:** Comprehensive incident response and business continuity plans shall be regularly reviewed and tested.
+*   **Data Safety Mechanisms:** Robust data safety mechanisms shall be implemented, including comprehensive client-side and server-side input validation (100% validation pass rate), transactional integrity (ACID properties), regular data backups (RPO ≤ 15 minutes), data encryption at rest and in transit, robust error handling and logging, and mechanisms for data reconciliation and recovery. Data anonymization or pseudonymization shall be used for non-production environments where sensitive data is present.
+
+
+
+
+#### NFR-ORG-03: Warranty, Support & Maintenance
 
 **Warranty**
 
@@ -128,7 +139,7 @@ The Bidders shall provide ongoing technical support and maintenance services for
 5.  **Evolutionary Maintenance:** Provision for minor enhancements and adaptations to the system to address evolving business needs or technological changes, as agreed upon with the procuring authority.
 6.  **Version Upgrades:** Provision for major version upgrades of the system, including planning, testing, and deployment, to ensure the system remains current and supported.
 
-#### NFR-ORG-03: Time Schedule and Deliverables
+#### NFR-ORG-04: Time Schedule and Deliverables
 
 **Project Timeline**
 
@@ -151,7 +162,7 @@ The system shall comply with all applicable laws, regulations, and industry stan
 *   **Data Privacy:** The system shall comply with the General Data Protection Regulation (GDPR) and other relevant data privacy laws (e.g., CCPA), ensuring data minimization, purpose limitation, and data subject rights.
 *   **Industry Standards:** The system shall adhere to relevant industry standards (e.g., PCI DSS for payment processing, HIPAA for healthcare data) as applicable.
 *   **Accessibility Standards:** The system shall comply with Web Content Accessibility Guidelines (WCAG) 2.1 Level AA, ensuring accessibility for users with disabilities.
-*   **Data Sovereignty:** Ensuring [Company] data is stored in approved national data centres, is a mandatory requirement. All production data and backups shall reside in accredited in-country facilities.
+*   **Data Sovereignty:** All [x] data, including production data, backups, disaster recovery sites, and associated metadata, shall be exclusively stored and processed within  [accredited national] data centers located within the geographical boundaries of [Country Name]. Data shall not be transferred, accessed, or processed outside of [Country Name] without explicit written consent from the procuring authority.
 
 #### NFR-EXT-02: Legal and Contractual Requirements
 
