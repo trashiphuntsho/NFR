@@ -192,11 +192,11 @@ The supplier shall identify and manage all third-party dependencies, including s
 **Aspects:** Third-Party Software, External APIs, Cloud Services.
 
 *   **Third-Party Software:** All third-party software components shall be regularly updated to their latest stable and secure versions. A software bill of materials (SBOM) shall be provided and maintained.
-*   ***Component Name and Version:*** Precise identification of each third-party component.
-*   ***License Type:*** The specific license under which each component is distributed (e.g., MIT, Apache 2.0, GPL, commercial).
-*   ***Purpose and Justification:*** A brief explanation of why each component is necessary and its role in the system.
-*   ***Security Vulnerability Status:*** Confirmation that each component is free from known critical or high-severity security vulnerabilities, based on a recent scan using industry-standard tools (e.g., OWASP Dependency-Check, Snyk).
-*   ***Support and Maintenance Status:*** Information on the availability of ongoing support, maintenance, and security updates for each component.
+  *   **Component Name and Version:** Precise identification of each third-party component.
+  *   **License Type:** The specific license under which each component is distributed (e.g., MIT, Apache 2.0, GPL, commercial).
+  *   **Purpose and Justification:** A brief explanation of why each component is necessary and its role in the system.
+  *   **Security Vulnerability Status:** Confirmation that each component is free from known critical or high-severity security vulnerabilities, based on a recent scan using industry-standard tools (e.g., OWASP Dependency-Check, Snyk).
+  *   **Support and Maintenance Status:** Information on the availability of ongoing support, maintenance, and security updates for each component.
 *   **External APIs:** Reliance on external APIs shall be minimized where possible. For necessary external APIs, robust error handling, retry mechanisms, and fallback strategies shall be implemented.
 *   **Cloud Services:** If cloud services are utilized, they shall adhere to industry best practices for security, reliability, and data privacy. Cloud service provider certifications (e.g., ISO 27001, SOC 2) shall be provided.
 
