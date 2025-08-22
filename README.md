@@ -21,7 +21,7 @@ The system shall exhibit exceptional resilience and performance, ensuring contin
 **Aspects:** Reliability, Availability, Performance, Scalability, Caching.
 
 *   **Reliability:** The system shall achieve a Mean Time Between Failures (MTBF) of no less than 1,500 hours, calculated quarterly, excluding pre-notified scheduled maintenance windows (maximum 4 hours/month, 1-week advance notice).
-*   **Availability:** The system shall maintain an operational availability of 99.9% during defined operational hours (06:00 to 22:00, Monday to Friday), measured by continuous 24/7 monitoring of key endpoints.
+*   **Availability:** The system shall maintain an operational availability of 99.9% during defined operational hours ([e.g., 06:00 to 22:00], [e.g., Monday to Friday]), measured by continuous 24/7 monitoring of key endpoints.
 *   **Performance under Normal Load:** The system shall support 10,000 concurrent users with an average response time of less than 1.5 seconds for 95% of critical transactions (e.g., user login, data retrieval, transaction submission) and less than 3 seconds for all other transactions.
 *   **Performance under Peak Load:** Under peak load conditions (defined as 15,000 concurrent users), the system shall maintain an average response time of less than 3 seconds for 95% of critical transactions and less than 5 seconds for all other transactions.
 *   **Scalability:** The system shall demonstrate linear scalability, whereby a doubling of hardware resources yields at least a 60% increase in transaction throughput.
