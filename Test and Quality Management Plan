@@ -1,0 +1,106 @@
+# Comprehensive Test and Quality Management Plan
+
+This document outlines the strategic approach to testing, reporting, and defect management for the project, ensuring that the Non-Functional Requirements (NFRs) are met and validated at every stage.
+
+---
+
+## 1. High-Level Test Strategy
+
+This strategy defines the scope, approach, resources, and schedule of intended testing activities. It is designed to verify that the system meets the quality standards defined in the NFR document.
+
+### 1.1 Testing Levels and Scope
+
+Testing will be conducted across multiple levels, each targeting specific NFRs.
+
+| **Testing Level**     | **Scope and Objectives**                                                                 | **Key NFRs Validated**                          | **Metrics to be Used**                                                                 |
+|-----------------------|-------------------------------------------------------------------------------------------|--------------------------------------------------|-----------------------------------------------------------------------------------------|
+| Unit Testing          | Verify individual components (e.g., functions, classes) in isolation. Focus on code correctness, logic, and adherence to standards. | NFR-PROD-004 (Code Quality)                     | Code Coverage (≥85%), Cyclomatic Complexity (<10), Halstead Metrics, Unit Test Pass Rate |
+| Integration Testing   | Verify the interfaces and interactions between integrated components. Ensure data flows correctly and services communicate as expected. | NFR-PROD-005 (Architecture), NFR-PROD-007 (Interoperability) | Integration Test Pass Rate (100%), API Response Time, Data Consistency Checks           |
+| System Testing        | Verify the complete, integrated system against the specified requirements. This is the primary phase for validating end-to-end NFRs. | NFR-PROD-001 (Performance), NFR-PROD-002 (Security), NFR-PROD-003 (Usability) | Response Times, MTBF, SUS Score, Transaction Success Rate, Security Vulnerability Reports |
+| User Acceptance Testing (UAT) | Formal testing conducted by end-users to certify the system is fit for purpose and meets business requirements. | NFR-PROD-003 (Usability), NFR-EXT-01 (Regulatory Compliance) | Transaction Success Rate (≥98%), User Feedback, SUS Score (≥75)                         |
+
+### 1.2 Types of Testing
+
+- **Performance Testing**: Load and stress tests to validate NFR-PROD-001. Metrics include response times, throughput (TPS), and resource utilization.
+- **Security Testing**: Automated (SAST, DAST) and manual (penetration testing) methods to validate NFR-PROD-002.
+- **Usability Testing**: Conducted with representative users to validate NFR-PROD-003 using SUS and task success rate analysis.
+- **Automated Regression Testing**: Continuous suite of automated tests to ensure stability. Key metric: Test Coverage Ratio.
+
+### 1.3 Test Environment and Tools
+
+- **Test Environment**: Dedicated, production-like test environment maintained per NFR-K16.
+- **Tools**:
+  - *Test Management*: Jira, TestRail
+  - *Automation*: Selenium, Cypress, Playwright; JUnit/PyTest
+  - *Performance*: JMeter, Gatling
+  - *Code Quality*: SonarQube
+  - *CI/CD*: Jenkins, GitLab CI
+
+---
+
+## 2. Project Traffic Light Report
+
+Provides a high-level summary of project health for senior stakeholders.
+
+### Sample Project Status Report: Week 32
+
+**Project**: National Digital Identity Platform  
+**Reporting Period**: August 11 - August 17, 2025  
+**Overall Status**: 🟡 YELLOW
+
+| **Area**     | **Status** | **Commentary**                                                                                     | **Trend**         |
+|--------------|------------|----------------------------------------------------------------------------------------------------|-------------------|
+| Schedule     | 🟡 YELLOW  | Authentication module is 5 days behind due to third-party integration complexity. Recovery plan in place. | ↓ Deteriorating   |
+| Budget       | 🟢 GREEN   | 3% under budget. Schedule slippage not yet affecting costs.                                        | → Stable          |
+| Quality      | 🟡 YELLOW  | Defect Detection Rate higher than projected. Code Coverage at 86% (Target: 85%), Cyclomatic Complexity at 12 (Target: <10). | ↓ Deteriorating   |
+| Scope        | 🟢 GREEN   | No changes. Requirement Creep at 0%.                                                               | → Stable          |
+| Risks        | 🔴 RED     | High-Severity Security Vulnerability (Risk-047) in payment gateway. Patch ETA: August 19.         | ↓ Deteriorating   |
+
+**Key Actions**:
+- **Security Team**: Fix Risk-047 by August 19.
+- **Dev Team**: Refactor Authentication module to reduce complexity.
+- **PMO**: Re-evaluate Q3 milestone timeline.
+
+---
+
+## 3. Defect Management Process
+
+Outlines the lifecycle of a defect from discovery to resolution.
+
+### 3.1 Defect Lifecycle Stages
+
+- **New**: Logged with reproduction steps, expected vs. actual results, logs/screenshots.
+- **Assigned**: Validated by Test Lead, prioritized, and assigned.
+- **In Progress**: Developer working on fix.
+- **Fixed**: Fix deployed to test environment.
+- **In Retest**: Original tester verifies fix.
+- **Closed**: Fix verified.
+- **Reopened**: Fix failed; defect reassigned.
+- **Rejected/Deferred**: Invalid, duplicate, or postponed with justification.
+
+### 3.2 Priority and Severity Levels
+
+**Severity**:
+- *1 (Critical)*: Crash, data loss, security breach.
+- *2 (High)*: Major functionality loss, no workaround.
+- *3 (Medium)*: Minor loss or major issue with workaround.
+- *4 (Low)*: Cosmetic/UI issue.
+
+**Priority**:
+- *1 (Urgent)*: Immediate fix required.
+- *2 (High)*: Fix in next release.
+- *3 (Medium)*: Fix if time allows.
+- *4 (Low)*: Future release.
+
+### 3.3 Defect Metrics and Reporting
+
+Tracked per NFR-PROD-004:
+
+- **Defect Density**: Total defects / KLOC
+- **Defect Detection Rate**: Defects per test phase
+- **Defect Resolution Time (MTTR)**: Avg. time to resolve by severity
+- **Defect Backlog**: Weekly count of open defects
+
+Weekly reports will include a burn-down chart showing open vs. closed defect trends.
+
+---
